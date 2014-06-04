@@ -2,7 +2,7 @@ Modernizr-Stylus
 ---------
 
 [![npm](http://img.shields.io/npm/v/modernizr-stylus.svg?style=flat)](http://badge.fury.io/js/modernizr-stylus)
-[![tests](http://img.shields.io/travis/declandewet/modernizr-stylus/0.0.1.svg?style=flat)](https://travis-ci.org/declandewet/modernizr-stylus)
+[![tests](http://img.shields.io/travis/declandewet/modernizr-stylus/master.svg?style=flat)](https://travis-ci.org/declandewet/modernizr-stylus)
 
 Modernizr-Stylus is a handy utility plugin for the Stylus CSS preprocessor that
 makes feature detection with Modernizr.js a lot easier.
