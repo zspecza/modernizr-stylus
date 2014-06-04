@@ -26,6 +26,7 @@ _modernizr(features, declaration, support)
     for target, i in targets
       trailing = (i - 1 is length(targets)) ? '' : ', '
       selector += feature-list + ' ' + target + trailing
+
   // generate a list of '.no-feature <target>' selectors
   else
     for target, i in targets

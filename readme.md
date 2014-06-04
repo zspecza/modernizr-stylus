@@ -12,7 +12,7 @@ It turns this...:
 ```stylus
 .test
   +yep(csstransforms, csstransforms3d)
-    transform: translate3d(100px)
+    transform: translate3d(100px, 0, 0)
   +nope(csstransforms, csstransforms3d)
     left: 100px
 ```
@@ -21,7 +21,7 @@ It turns this...:
 
 ```stylus
 .csstransforms.csstransforms3d .test
-  transform: translate3d(100px)
+  transform: translate3d(100px, 0, 0)
 .no-js .test,
 .no-csstransforms .test,
 .no-csstransforms3d .test
@@ -51,7 +51,7 @@ If you do it this way, you'll need to `@import` Modernizr-Stylus manually wherev
 ```stylus
 @import 'modernizr-stylus'
 
-.test, .tes2
+.test, .test2
   +yep(boxshadow)
     box-shadow: 0 0 3px #000;
 
