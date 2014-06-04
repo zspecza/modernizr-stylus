@@ -1,0 +1,7 @@
+.csstransforms .test {
+  transform: translateX(100px);
+}
+.no-js .test,
+.no-csstransforms .test {
+  left: 100px;
+}

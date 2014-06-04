@@ -1,0 +1,60 @@
+// Mixin _modernizr
+//
+// @api private
+// @param features    - comma or space delimited list of features to test for
+// @param declaration - {block} to be passed by yep/nope block mixins
+// @param support     - boolean value determining whether to test for support
+//                      or no support
+_modernizr(features, declaration, support)
+
+  // get a list of targets from the current selector
+  targets = each-target-of(selector())
+
+  selector = ''
+
+  // generate a list of '.no-js <target>' selectors
+  if not support
+    for target, i in targets
+      trailing = (i - 1 is length(targets)) ? '' : ', '
+      selector += '.no-js ' + target + trailing
+
+  // generate a list of '.feature.other-feature <target>' selectors
+  if support
+    feature-list = ''
+    for feature in features
+      feature-list += '.' + feature
+    for target, i in targets
+      trailing = (i - 1 is length(targets)) ? '' : ', '
+      selector += feature-list + ' ' + target + trailing
+  // generate a list of '.no-feature <target>' selectors
+  else
+    for target, i in targets
+      trailing = (i - 1 is length(targets)) ? '' : ', '
+      for feature in features
+        selector += '.no-' + feature + ' ' + target + trailing
+
+  // declare this ruleset at the root reference (/ is the same as Sass' @at-root)
+  /{selector}
+    {declaration}
+
+// Block Mixin +yep()
+// @api public
+//
+// usage:
+//
+// .selector
+//   +yep(opacity)
+//     opacity: 0
+yep()
+  _modernizr(arguments, block, true)
+
+// Block Mixin +nope()
+// @api public
+//
+// usage:
+//
+// .selector
+//   +nope(opacity)
+//     visibility: hidden
+nope()
+  _modernizr(arguments, block, false)

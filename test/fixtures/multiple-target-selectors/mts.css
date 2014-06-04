@@ -1,0 +1,10 @@
+.csstransitions .test,
+.csstransitions .test2 {
+  foo: bar;
+}
+.no-js .test,
+.no-js .test2,
+.no-csstransitions .test,
+.no-csstransitions .test2 {
+  bar: baz;
+}

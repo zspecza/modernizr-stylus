@@ -1,0 +1,7 @@
+.opacity .test .child {
+  opacity: 0;
+}
+.no-js .test .child,
+.no-opacity .test .child {
+  visibility: hidden;
+}
