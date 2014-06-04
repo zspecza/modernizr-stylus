@@ -1,6 +1,6 @@
 {
   "name": "modernizr-stylus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helper mixins for using Modernizr.js test classes in Stylus",
   "author": "Declan de Wet <declandewet@me.com>",
   "main": "index.js",
