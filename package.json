@@ -24,7 +24,7 @@
   "devDependencies": {
     "css-parse": "*",
     "should": "*",
-    "coffee-script": "*",
+    "coffee-script": ">=1.12.5",
     "mocha": "*",
     "accord": "*",
     "stylus": "*"
