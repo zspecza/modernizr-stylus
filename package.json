@@ -22,7 +22,7 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "css-parse": "*",
+    "css-parse": ">=2.0.0",
     "should": "*",
     "coffee-script": "*",
     "mocha": "*",
