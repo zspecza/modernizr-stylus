@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "css-parse": "*",
-    "should": "*",
+    "should": ">=13.1.1",
     "coffee-script": "*",
     "mocha": "*",
     "accord": "*",
