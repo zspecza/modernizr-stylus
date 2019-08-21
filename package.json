@@ -27,7 +27,7 @@
     "coffee-script": "*",
     "mocha": "*",
     "accord": "*",
-    "stylus": "*"
+    "stylus": ">=0.54.7"
   },
   "engines": {
     "node": ">=0.10.0"
